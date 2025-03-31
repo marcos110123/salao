@@ -1,0 +1,473 @@
+/* Estilos gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-top: 70px; /* Ajuste esse valor conforme a altura do seu cabeçalho */
+}
+
+
+h1, h2, h3 {
+    color: #d9534f; /* Rosa vibrante */
+    
+}
+
+a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d9534f;
+}
+
+/* Cabeçalho */
+/* Cabeçalho */
+header {
+    background-color: #f8f8f8; /* Cor de fundo suave */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header.sticky {
+    background-color: #d9534f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Logo */
+.logo-container img {
+    width: 140px;  /* Aumenta a largura da logo */
+    height: auto;  /* Mantém a proporção original da imagem */
+}
+
+/* Barra de navegação */
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin: 0 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #d9534f; /* Cor de destaque para hover */
+}
+
+/* Barra de pesquisa */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-btn {
+    background-color: #d9534f;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-btn:hover {
+    background-color: #d9534f;
+}
+
+/* Redes sociais */
+.social-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Seção de Produtos */
+/* Card do Produto */
+/* Estilos gerais da seção de produtos */
+#produtos {
+    background-color: #f9f9f9; /* Cor de fundo suave para a seção */
+    padding: 40px 20px;
+    text-align: start;
+}
+
+#produtos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #d9534f;/* Cor de destaque para o título */
+}
+
+/* Container de produtos */
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Produto */
+.produto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Banner de promoção */
+.banner-promocao {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #d9534f;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+/* Imagem do produto */
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilos do nome do produto */
+.produto h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Preço original e promocional */
+.preco-antigo {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.preco-promocional {
+    font-size: 1.5em;
+    color: #d9534f; /* Cor de destaque para o preço promocional */
+    margin-bottom: 10px;
+}
+
+/* Estilo do botão */
+.btn {
+    display: inline-block;
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d9534f; /* Cor mais escura quando o botão é hover */
+}
+
+
+.meu-link {
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bold;
+    color: #d9534f;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.meu-link:hover {
+    color: #d9534f;
+}
+
+/* Ofertas */
+#ofertas {
+    background-color: #f9f9f9; /* Fundo suave para a seção */
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #d9534f; /* Cor vibrante para o título */
+    margin-bottom: 30px;
+  }
+  
+  .offer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsividade automática */
+    gap: 30px; /* Espaçamento entre os itens */
+  }
+  
+  .offer-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .offer-item:hover {
+    transform: translateY(-10px); /* Leve deslocamento para cima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+  }
+  
+  .offer-item h3 {
+    font-size: 1.8rem;
+    color: #d9534f; /* Cor vibrante para o título */
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .offer-item p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .offer-btn {
+       display: inline-block;
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .offer-btn:hover {
+    background-color: #eedde3; /* Tom mais escuro no hover */
+    transform: scale(1.05); /* Leve aumento no botão */
+  }
+  
+  
+
+
+/* Formulário de Contato */
+form {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d9534f;
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 0px;
+    margin-top: 30px;
+}
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cart-container {
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #d9534f;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+ /* Estilos do formulário de agendamento */
+#agendamento {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#agendamento h2 {
+    font-size: 2rem;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+#agendamento p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #d9534f;
+}
+
+#confirmacao {
+    color: #4caf50;  /* Cor verde para sucesso */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.produto {
+    transition: opacity 0.3s ease;
+}
+.contatosfinal li {
+    margin: 0 10px;
+}
+
+.contatosfinal img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.contatosfinal img:hover {
+    transform: scale(1.1);
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #e91e63;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
+    .produtos-container {
+        flex-direction: column;
+    }
+}
