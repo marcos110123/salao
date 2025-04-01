@@ -8,17 +8,17 @@ body {
 
 
 h1, h2, h3 {
-    color: #d9534f; /* Rosa vibrante */
+    color: #8C6F50; 
     
 }
 
 a {
-    color: #d9534f;
+    color: #8C6F50; 
     text-decoration: none;
 }
 
 a:hover {
-    color: #d9534f;
+    color: #8C6F50; 
 }
 
 /* Cabeçalho */
@@ -43,7 +43,7 @@ header {
     margin: 0 auto;
 }
 header.sticky {
-    background-color: #d9534f;
+    background-color: #8C6F50; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -75,7 +75,7 @@ header.sticky {
 }
 
 .nav-bar ul li a:hover {
-    color: #d9534f; /* Cor de destaque para hover */
+    color: #8C6F50; /* Cor de destaque para hover */
 }
 
 /* Barra de pesquisa */
@@ -93,7 +93,7 @@ header.sticky {
 }
 
 .search-btn {
-    background-color: #d9534f;
+    background-color: #8C6F50; 
     border: none;
     padding: 8px 12px;
     margin-left: 10px;
@@ -104,7 +104,7 @@ header.sticky {
 }
 
 .search-btn:hover {
-    background-color: #d9534f;
+    background-color: #8C6F50; 
 }
 
 /* Redes sociais */
@@ -142,7 +142,7 @@ header.sticky {
 #produtos h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #d9534f;/* Cor de destaque para o título */
+    color: #8C6F50; /* Cor de destaque para o título */
 }
 
 /* Container de produtos */
@@ -173,7 +173,7 @@ header.sticky {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #d9534f;
+    background-color: #8C6F50; 
     color: #fff;
     padding: 5px 10px;
     font-size: 1em;
@@ -202,15 +202,14 @@ header.sticky {
 
 .preco-promocional {
     font-size: 1.5em;
-    color: #d9534f; /* Cor de destaque para o preço promocional */
+    color: #8C6F50;  /* Cor de destaque para o preço promocional */
     margin-bottom: 10px;
 }
 
 /* Estilo do botão */
 .btn {
     display: inline-block;
-    background-color: #d9534f;
-    color: white;
+    background-color: #cab297; 
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -219,7 +218,7 @@ header.sticky {
 }
 
 .btn:hover {
-    background-color: #d9534f; /* Cor mais escura quando o botão é hover */
+    background-color: #8C6F50;  /* Cor mais escura quando o botão é hover */
 }
 
 
@@ -227,21 +226,22 @@ header.sticky {
     margin-top: 10px;
     display: inline-block;
     font-weight: bold;
-    color: #d9534f;
+    color: #8C6F50; 
     text-transform: uppercase;
     transition: color 0.3s;
 }
 
 .meu-link:hover {
-    color: #d9534f;
+    color: #8C6F50; 
 }
 
 /* Ofertas */
 #ofertas {
     background-color: #f9f9f9; /* Fundo suave para a seção */
     padding: 40px 0;
+
   }
-  
+ 
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -251,7 +251,7 @@ header.sticky {
   h2 {
     font-size: 2.2rem;
     text-align: center;
-    color: #d9534f; /* Cor vibrante para o título */
+    color: #8C6F50;  /* Cor vibrante para o título */
     margin-bottom: 30px;
   }
   
@@ -280,7 +280,7 @@ header.sticky {
   
   .offer-item h3 {
     font-size: 1.8rem;
-    color: #d9534f; /* Cor vibrante para o título */
+    color: #8C6F50;  /* Cor vibrante para o título */
     margin-bottom: 10px;
     font-weight: bold;
   }
@@ -293,7 +293,7 @@ header.sticky {
   
   .offer-btn {
        display: inline-block;
-    background-color: #d9534f;
+    background-color: #8C6F50; 
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -327,7 +327,7 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #d9534f;
+    background-color: #8C6F50; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -336,7 +336,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #d9534f;
+    background-color:#8C6F50; 
 }
 
 footer {
@@ -357,7 +357,7 @@ footer {
     position: absolute;
     top: -5px;
     right: -5px;
-    background: #d9534f;
+    background: #8C6F50; 
     color: white;
     font-size: 12px;
     padding: 5px;
@@ -373,7 +373,7 @@ footer {
 
 #agendamento h2 {
     font-size: 2rem;
-    color: #d9534f;
+    color: #8C6F50; 
     margin-bottom: 20px;
 }
 
@@ -413,7 +413,7 @@ form {
 }
 
 button {
-    background-color: #d9534f;
+    background-color: #8C6F50; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -424,7 +424,7 @@ button {
 }
 
 button:hover {
-    background-color: #d9534f;
+    background-color: #8C6F50; 
 }
 
 #confirmacao {
@@ -452,8 +452,7 @@ button:hover {
 }
 .loader {
     border: 16px solid #f3f3f3;
-    border-top: 16px solid #e91e63;
-    border-radius: 50%;
+    border-top: 16px solid #8C6F50; 
     width: 50px;
     height: 50px;
     animation: spin 2s linear infinite;
@@ -463,11 +462,50 @@ button:hover {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+/* Responsividade para telas menores (dispositivos móveis) */
 @media (max-width: 768px) {
-    .nav-bar ul {
-        flex-direction: column;
+    /* Ajustar layout para telas menores */
+    nav ul {
+        text-align: center;
     }
-    .produtos-container {
-        flex-direction: column;
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+  
+    .box {
+        padding: 10px;
+    }
+
+    /* Diminuir o tamanho da fonte em dispositivos móveis */
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 8px;
+    }
+
+    /* Reduzir o tamanho do texto no título */
+    header h1 {
+        font-size: 24px;
     }
 }
+
+@media (max-width: 480px) {
+    /* Ajustes para telas de celulares */
+    header h1 {
+        font-size: 20px;
+    }
+
+    .box {
+        padding: 8px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
