@@ -83,3 +83,10 @@ document.addEventListener('DOMContentLoaded', function () {
     bloquearHorarios();
     bloquearDatas();
 });
+window.addEventListener("resize", function() {
+    if (window.innerWidth < 600) {
+        document.body.style.backgroundColor = "#f0f0f0";
+    } else {
+        document.body.style.backgroundColor = "white";
+    }
+});

@@ -21,63 +21,56 @@ a:hover {
     color: #8C6F50; 
 }
 
-/* Cabeçalho */
-/* Cabeçalho */
 header {
-    background-color: #f8f8f8; /* Cor de fundo suave */
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0; /* Remove qualquer padding extra */
+    margin: 0; /* Remove margens */
+    background-color: #fff;
+    position: absolute; /* Posiciona diretamente no topo da tela */
+    top: 0; /* Garante que fique no topo */
     left: 0;
     right: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
+/* Ajuste no container do cabeçalho */
 .header-container {
     display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em telas pequenas */
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-header.sticky {
-    background-color: #8C6F50; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+    padding: 0 10px;
+    
+    }
 
 
-/* Logo */
-.logo-container img {
-    width: 140px;  /* Aumenta a largura da logo */
-    height: auto;  /* Mantém a proporção original da imagem */
+/* Ajuste na logo para não ultrapassar a tela */
+.logo-container {
+    max-width: 150px; /* Ajuste conforme necessário */
 }
 
-/* Barra de navegação */
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+/* Ajuste na barra de navegação */
 .nav-bar ul {
     list-style: none;
-    display: flex;
-    margin: 0;
     padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
 .nav-bar ul li {
-    margin: 0 20px;
+    display: inline-block;
 }
 
 .nav-bar ul li a {
     text-decoration: none;
-    color: #333;
     font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
-
-.nav-bar ul li a:hover {
-    color: #8C6F50; /* Cor de destaque para hover */
-}
-
 /* Barra de pesquisa */
 .search-container {
     display: flex;
@@ -107,25 +100,35 @@ header.sticky {
     background-color: #8C6F50; 
 }
 
-/* Redes sociais */
+/* Estilização da lista de redes sociais */
 .social-links {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    gap: 10px; /* Espaçamento entre ícones */
+    align-items: center;
 }
 
-.social-links li {
-    margin: 0 10px;
-}
-
-.social-links img {
+/* Ajuste no tamanho dos ícones */
+.social-links li img {
     width: 30px;
     height: 30px;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Ajuste no filtro dos ícones */
+.social-links img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(80%);
+    transition: 0.3s;
 }
 
 .social-links img:hover {
+    filter: none; /* Retorna à cor original ao passar o mouse */
+}
+
+/* Efeito de hover nos ícones */
+.social-links li img:hover {
     transform: scale(1.1);
 }
 
@@ -137,7 +140,9 @@ header.sticky {
     background-color: #f9f9f9; /* Cor de fundo suave para a seção */
     padding: 40px 20px;
     text-align: start;
+    
 }
+
 
 #produtos h2 {
     font-size: 2em;
@@ -462,50 +467,61 @@ button:hover {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-/* Responsividade para telas menores (dispositivos móveis) */
+
+
+/* Ajuste para telas menores */
 @media (max-width: 768px) {
-    /* Ajustar layout para telas menores */
-    nav ul {
+    .header-container {
+        flex-direction: column; /* Empilha os elementos */
         text-align: center;
     }
 
-    nav ul li {
-        display: block;
+    .nav-bar ul {
+        flex-direction: column; /* Coloca os itens do menu um abaixo do outro */
+        padding: 0;
+    }
+
+    .nav-bar ul li {
         margin-bottom: 10px;
     }
-  
-    .box {
-        padding: 10px;
-    }
 
-    /* Diminuir o tamanho da fonte em dispositivos móveis */
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        padding: 8px;
-    }
-
-    /* Reduzir o tamanho do texto no título */
-    header h1 {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Ajustes para telas de celulares */
-    header h1 {
-        font-size: 20px;
-    }
-
-    .box {
-        padding: 8px;
-    }
-
-    footer {
+    .search-container {
+        width: 100%;
         text-align: center;
-        padding: 10px;
+    }
+
+    .search-input {
+        width: 90%;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+}/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    footer img {
+        max-width: 120px; /* Reduz a imagem em telas pequenas */
     }
 }
+#sobre {
+    text-align: center; /* Centraliza o texto */
+    max-width: 800px; /* Define um limite para o conteúdo */
+    margin: 0 auto; /* Centraliza a seção */
+    padding: 20px; /* Adiciona espaço ao redor */
+}
 
+/* Para telas menores */
+@media (max-width: 768px) {
+    #sobre {
+        padding: 15px;
+    }
+    #produtos {
+        background-color: #f9f9f9; /* Cor de fundo suave para a seção */
+        padding: 40px 20px;
+        text-align: start;
+        padding-top: 370px; /* Ajuste conforme necessário */
+    }
+}
